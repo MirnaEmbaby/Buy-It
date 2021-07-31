@@ -1,3 +1,4 @@
+import 'package:buyit/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -5,22 +6,20 @@ class LoginLabel extends StatefulWidget {
   final Icon labelIcon;
   final TextInputType TIT;
   final bool hiddenText;
-  final Color LY;
 
-  const LoginLabel(this.labelIcon, this.TIT, this.hiddenText, this.LY);
+  const LoginLabel(this.labelIcon, this.TIT, this.hiddenText);
 
   @override
   _LoginLabelState createState() =>
-      _LoginLabelState(labelIcon, TIT, hiddenText, LY);
+      _LoginLabelState(labelIcon, TIT, hiddenText);
 }
 
 class _LoginLabelState extends State<LoginLabel> {
   final Icon labelIcon;
   final TextInputType TIT;
   final bool hiddenText;
-  final Color LY;
 
-  _LoginLabelState(this.labelIcon, this.TIT, this.hiddenText, this.LY);
+  _LoginLabelState(this.labelIcon, this.TIT, this.hiddenText);
 
   @override
   Widget build(BuildContext context) {

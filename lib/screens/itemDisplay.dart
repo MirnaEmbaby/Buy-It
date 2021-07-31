@@ -1,19 +1,14 @@
+import 'package:buyit/colors.dart';
 import 'package:flutter/material.dart';
 
 class ItemDisplay extends StatefulWidget {
   const ItemDisplay(
-    this.Y,
-    this.LY,
-    this.B,
     this.itemImage,
     this.itemName,
     this.itemDescription,
     this.itemPrice,
   );
 
-  final Color Y;
-  final Color LY;
-  final Color B;
   final String itemImage;
   final String itemName;
   final String itemDescription;
@@ -21,9 +16,6 @@ class ItemDisplay extends StatefulWidget {
 
   @override
   _ItemDisplayState createState() => _ItemDisplayState(
-        Y,
-        LY,
-        B,
         itemImage,
         itemName,
         itemDescription,
@@ -32,18 +24,13 @@ class ItemDisplay extends StatefulWidget {
 }
 
 class _ItemDisplayState extends State<ItemDisplay> {
-  final Color Y;
-  final Color LY;
-  final Color B;
   final String itemImage;
   final String itemName;
   final String itemDescription;
   final String itemPrice;
 
-  Color W = Color.fromRGBO(250, 250, 250, 1);
-
-  _ItemDisplayState(this.Y, this.LY, this.B, this.itemImage, this.itemName,
-      this.itemDescription, this.itemPrice);
+  _ItemDisplayState(
+      this.itemImage, this.itemName, this.itemDescription, this.itemPrice);
 
   @override
   Widget build(BuildContext context) {

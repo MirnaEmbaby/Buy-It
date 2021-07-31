@@ -7,26 +7,17 @@ class EachItem extends StatelessWidget {
   final String itemName;
   final String itemDescription;
   final String itemPrice;
-  final Color Y;
-  final Color LY;
-  final Color B;
 
   const EachItem(
     this.itemImage,
     this.itemName,
     this.itemDescription,
     this.itemPrice,
-    this.Y,
-    this.LY,
-    this.B,
   );
 
   void selectItem(BuildContext ctx) {
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
       return ItemDisplay(
-        Y,
-        LY,
-        B,
         itemImage,
         itemName,
         itemDescription,

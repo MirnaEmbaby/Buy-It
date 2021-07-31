@@ -1,3 +1,4 @@
+import 'package:buyit/colors.dart';
 import 'package:buyit/screens/jacketsScreen.dart';
 import 'package:buyit/screens/shoesScreen.dart';
 import 'package:buyit/screens/trousersScreen.dart';
@@ -5,13 +6,7 @@ import 'package:buyit/screens/tshirtsScreen.dart';
 import 'package:flutter/material.dart';
 
 class DiscoverScreen extends StatelessWidget {
-  final Color Y;
-  final Color LY;
-  final Color B;
-
-  DiscoverScreen(this.Y, this.LY, this.B);
-
-  Color W = Color.fromRGBO(250, 250, 250, 1);
+  DiscoverScreen();
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +56,7 @@ class DiscoverScreen extends StatelessWidget {
             JacketsScreen(),
             TrousersScreen(),
             TshirtsScreen(),
-            ShoesScreen(Y, LY, B),
+            ShoesScreen(),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(

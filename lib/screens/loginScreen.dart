@@ -1,17 +1,14 @@
+import 'package:buyit/colors.dart';
 import 'package:buyit/widgets/loginLabel.dart';
 import 'package:flutter/material.dart';
 import 'package:buyit/screens/discoverScreen.dart';
 
 class LoginScreen extends StatelessWidget {
-  final Color Y;
-  final Color LY;
-  final Color B;
-
-  LoginScreen(this.Y, this.LY, this.B);
+  LoginScreen();
 
   void logedin(BuildContext ctx) {
     Navigator.of(ctx).pushReplacement(MaterialPageRoute(builder: (_) {
-      return DiscoverScreen(Y, LY, B);
+      return DiscoverScreen();
     }));
   }
 
@@ -42,9 +39,8 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               height: 40,
             ),
-            LoginLabel(Icon(Icons.mail), TextInputType.emailAddress, false, LY),
-            LoginLabel(
-                Icon(Icons.lock), TextInputType.visiblePassword, true, LY),
+            LoginLabel(Icon(Icons.mail), TextInputType.emailAddress, false),
+            LoginLabel(Icon(Icons.lock), TextInputType.visiblePassword, true),
             SizedBox(
               height: 40,
             ),

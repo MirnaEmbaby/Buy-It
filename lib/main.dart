@@ -3,10 +3,6 @@ import 'screens/loginScreen.dart';
 
 void main() => runApp(MyApp());
 
-Color Y = Color.fromRGBO(254, 193, 7, 1);
-Color LY = Color.fromRGBO(255, 228, 141, 1);
-Color B = Colors.black;
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -25,6 +21,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return LoginScreen(Y, LY, B);
+    return LoginScreen();
   }
 }

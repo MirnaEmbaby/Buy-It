@@ -3,12 +3,6 @@ import 'package:buyit/widgets/eachItem.dart';
 import 'package:flutter/material.dart';
 
 class ShoesScreen extends StatelessWidget {
-  final Color Y;
-  final Color LY;
-  final Color B;
-
-  const ShoesScreen(this.Y, this.LY, this.B);
-
   @override
   Widget build(BuildContext context) {
     return GridView(
@@ -24,9 +18,6 @@ class ShoesScreen extends StatelessWidget {
                 itemData.itemName,
                 itemData.itemDescription,
                 itemData.itemPrice,
-                Y,
-                LY,
-                B,
               ))
           .toList(),
     );
